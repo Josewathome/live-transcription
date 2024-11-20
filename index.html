@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Transcription</title>
+    <style>
+        .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        #recordingStatus {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        #liveTranscript {
+            font-size: 16px;
+            margin-top: 20px;
+            background: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ccc;
+            max-width: 600px;
+            word-wrap: break-word;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>Live Audio Transcription</h1>
+    <button id="startBtn" class="btn">Start Recording</button>
+    <button id="stopBtn" class="btn" disabled>Stop Recording</button>
+    <div id="recordingStatus">Status: Not Recording</div>
+    <div id="liveTranscript">Transcription will appear here...</div>
+
+    <script src="/static/process.js"></script>
+</body>
+</html>
